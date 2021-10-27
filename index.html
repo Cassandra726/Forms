@@ -19,9 +19,52 @@
             <br>
             <br>
             <hr>
-            <label for="slider">Slider</label>
-            <input type="range" name="slider" id="slider" min="3" max="24" step="1">
-
+            <label for="slider">Volume</label>
+            <br>
+            <span>Low</span>
+            <input type="range" name="slider" id="slider" min="1" max="10" step="1">
+            <span>High</span>
+            <br>
+            <br>
+            <span>Do you want your Photo Matted with a Frame?</span>
+            <br>
+            <label for="yes">Yes</label>
+            <input type="radio" name="matting" value="yes" id="yes">
+            <br>
+            <label for="no">No</label>
+            <input type="radio" name="matting" value="no" id="no">
+            <br>
+            <br>
+            <span>Frame Matting Color Options</span>
+            <br>
+            <label for="matted">Black</label>
+            <input type="checkbox" name="black" id="matted" value="black">
+            <label for="matted">White</label>
+            <input type="checkbox" name="white" id="matted" value="white">
+            <label for="matted">Grey</label>
+            <input type="checkbox" name="grey" id="matted" value="grey">
+            <br>
+            <br>
+            <label for="frames">Frame Sizes</label>
+            <select id="frames" name="frames">
+                <option>5 x 7</option>
+                <option>8 x 10</option>
+                <option>10 x 12</option>
+                <option>18 x 24</option>
+            </select>
+            <br>
+            <br>
+            <label for="destination">Favorite Vacation Destination</label>
+            <input type="text" id="destination" list="places" name="destination">
+            <datalist id="places">
+                <option value="Norway"></option>
+                <option value="Artic Circle"></option>
+                <option value="Anartica"></option>
+            </datalist>
+            <br><br>
+            <label for="additional">Any additional information?</label>
+            <br>
+            <textarea id="additional" name="additional" rows="10" cols="20">Special Needs</textarea>
         </form>
     </body>
 
